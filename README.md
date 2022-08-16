@@ -47,9 +47,6 @@ go to unziped folder and list content:
 $ /opt/pulsar/apache-pulsar-2.10.0 > ls -la
 ```
 ```
-total 132
-drwxrwxr-x 11 automaton automaton  4096 Jun  7 17:50 .
-drwxr-xr-x  3 automaton automaton  4096 Jun  7 16:54 ..
 -rw-r--r--  1 automaton automaton 32333 Jan 22  2020 LICENSE
 -rw-r--r--  1 automaton automaton  6612 Jan 22  2020 NOTICE
 -rw-r--r--  1 automaton automaton  1269 Jan 22  2020 README
