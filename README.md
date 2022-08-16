@@ -3,7 +3,7 @@
 
 Download pulsar binaries to /opt/pulsar directory, previously created
 ```
-$ opt/pulsar> sudo wget https://github.com/apache/pulsar/archive/refs/tags/v2.10.0.zip
+$ opt/pulsar > sudo wget https://github.com/apache/pulsar/archive/refs/tags/v2.10.0.zip
 ```
 ```
 --2022-08-14 10:03:15--  https://github.com/apache/pulsar/archive/refs/tags/v2.10.0.zip
@@ -27,7 +27,7 @@ $ opt/pulsar$ ls -la
 
 Unzip downloaded file
 ```
-$ opt/pulsar> sudo unzip v2.10.0.zip
+$ opt/pulsar > sudo unzip v2.10.0.zip
 ```
 ```
 inflating: pulsar-2.10.0/tiered-storage/src/main/resources/findbugsExclude.xml
@@ -39,12 +39,12 @@ inflating: pulsar-2.10.0/wireshark/pulsar.lua
 
 back one level and change ownership to folder and files recursively
 ```
-$ /opt> sudo chown -R automaton:automaton pulsar 
+$ /opt > sudo chown -R automaton:automaton pulsar 
 ```
 
 go to unziped folder and list content:
 ```
-$ /opt/pulsar/apache-pulsar-2.10.0> ls -la
+$ /opt/pulsar/apache-pulsar-2.10.0 > ls -la
 ```
 ```
 total 132
