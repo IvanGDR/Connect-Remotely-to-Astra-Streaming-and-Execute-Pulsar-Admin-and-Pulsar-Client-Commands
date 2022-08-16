@@ -1,7 +1,7 @@
 # Connect Remotely to Astra Streaming and execute pulsar-admin and pulsar-client commands
 
 
-Download pulsar binaries
+Download pulsar binaries to /opt/pulsar directory, previously created
 ```
 $ opt/pulsar> sudo wget https://github.com/apache/pulsar/archive/refs/tags/v2.10.0.zip
 ```
@@ -65,10 +65,10 @@ drwxrwxr-x  2 automaton automaton 28672 Aug  2 00:34 logs
 ```
 
 
-# Connect to Astra Streaming using Pulsar CLI
+### Connect to Astra Streaming using Pulsar CLI
 
 
-The minimun requirement to connect remotely to Astra STreaming and and start using Pulsar CLI is to have a tenant already in place.
+The minimun requirement to connect remotely to Astra Streaming and start using Pulsar Admin and Pulsar CLI is to have a tenant already in place.
 
 In my case I have created a tenant called "ivantenant", after this go to the connect tab and download the client.conf file.
 
@@ -102,18 +102,17 @@ tlsTrustStorePath=
 tlsTrustStorePassword=
 ```
 
-
-This downloaded client.conf file should replace the file with similar name in your downloaded and unzipped pulsar binaries, therefore, go to:
+This downloaded client.conf file should replace the file with similar name in your downloaded and unzipped pulsar binaries directory, therefore go to:
 
 ```
 $ cd /opt/pulsar/apache-pulsar-2.10.0/conf
 ```
 
-rename the client.conf file that comes with the binaries by default:
+Rename the client.conf file that comes with the binaries by default
 ```
 $ /opt/pulsar/apache-pulsar-2.10.0/conf > sudo mv client.conf client.conf.backuppulsar210
 ```
-and create a new conf.file with the content of the of the downloaded con.file from the Astra Pulsar intance within 
+Create a new client.conf file and paste the the content of the downloaded conf.file obtained from the Astra Pulsar intance 
 ```
 $ /opt/pulsar/apache-pulsar-2.10.0/conf > cat client.conf
 ```
@@ -139,12 +138,12 @@ tlsTrustStorePath=
 tlsTrustStorePassword=
 ```
 
-Using pulsar-admina dn pulsar-client commands
+### Using pulsar-admin and pulsar-client commands
 
 It is not neccessary to start any of the pulsar components as zookeeper, bookkeeper or broker etc.
 
 
-for example to list your topics from Astra Streaming Instance:
+for example, executing straight away this command to list your topics from your Astra Streaming Instance:
 ```
 $ /opt/pulsar/apache-pulsar-2.10.0 > ./bin/pulsar-admin topics list ivantenant/ivannamespace
 ```
@@ -152,7 +151,9 @@ $ /opt/pulsar/apache-pulsar-2.10.0 > ./bin/pulsar-admin topics list ivantenant/i
 persistent://ivantenant/ivannamespace/ivantopic
 ```
 
-The options now to interact with your Astra Streaming instance are much more wider. For a full reference of options available within Astra Streaming visit:
+The above command is just a tiny hint of the options to interact with your Astra Streaming instance these are much more wider now.
+
+For a full reference of options available within Astra Streaming visit:
 
 [DataStax Astra Streaming Documentation](https://docs.datastax.com/en/astra-streaming/docs/astream-quick-start.html#use-pulsar-tools)
 
