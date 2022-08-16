@@ -42,7 +42,7 @@ back one level and change ownership to folder and files recursively
 $ /opt > sudo chown -R automaton:automaton pulsar 
 ```
 
-go to unziped folder and list content:
+go to unzipped folder and list content:
 ```
 $ /opt/pulsar/apache-pulsar-2.10.0 > ls -la
 ```
@@ -137,10 +137,10 @@ tlsTrustStorePassword=
 
 ### Using pulsar-admin and pulsar-client commands
 
-It is not neccessary to start any of the pulsar components as zookeeper, bookkeeper or broker etc.
+It is not necessary to start any of the pulsar components as zookeeper, bookkeeper or broker etc.
 
 
-for example, executing straight away this command to list your topics from your Astra Streaming Instance:
+for example, execute straight away this command to list your topics from your Astra Streaming Instance:
 ```
 $ /opt/pulsar/apache-pulsar-2.10.0 > ./bin/pulsar-admin topics list ivantenant/ivannamespace
 ```
