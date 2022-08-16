@@ -71,7 +71,7 @@ In my case I have created a tenant called "ivantenant", after this go to the con
 
 
 <p align="center">
-<img width="900" height="350" src="https://user-images.githubusercontent.com/67383481/184938117-6ced728b-9139-4976-85b7-c63df79d5ce5.png">
+<img width="900" height="250" src="https://user-images.githubusercontent.com/67383481/184938117-6ced728b-9139-4976-85b7-c63df79d5ce5.png">
 </p>
 
 
