@@ -72,7 +72,10 @@ In my case I have created a tenant called "ivantenant", after this go to the con
 
 Downloading client.conf file
 
-![Screen Shot 2022-08-16 at 12.55.31 PM.png](:storage/8fc9f8ec-5bfa-44aa-8021-22eee5c373b5/bf947b9f.png)
+
+<p align="center">
+<img width="900" height="450" src="https://user-images.githubusercontent.com/67383481/184938117-6ced728b-9139-4976-85b7-c63df79d5ce5.png">
+</p>
 
 
 My client.conf file looks like this:
