@@ -109,7 +109,7 @@ Rename the client.conf file that comes with the binaries by default
 ```
 $ /opt/pulsar/apache-pulsar-2.10.0/conf > sudo mv client.conf client.conf.backuppulsar210
 ```
-Create a new client.conf file and paste the the content of the downloaded conf.file obtained from the Astra Pulsar intance 
+Create a new client.conf file and paste the content of the downloaded conf.file obtained from the Astra Pulsar intance 
 ```
 $ /opt/pulsar/apache-pulsar-2.10.0/conf > cat client.conf
 ```
