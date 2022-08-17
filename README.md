@@ -19,7 +19,7 @@ v2.10.0.zip             [        <=>         ]  58.73M  11.3MB/s    in 5.2s
 ```
 Verify file has been downloaded
 ```
-$ opt/pulsar$ ls -la
+$ opt/pulsar > ls -la
 ```
 ```
 -rw-r--r--  1 root      root      61587741 Aug 14 10:03 v2.10.0.zip
