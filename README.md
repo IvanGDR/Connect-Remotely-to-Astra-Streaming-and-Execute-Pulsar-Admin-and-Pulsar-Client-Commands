@@ -1,7 +1,11 @@
 # Connect Remotely to Astra Streaming and execute pulsar-admin and pulsar-client commands
 
 
-Download pulsar binaries to /opt/pulsar directory, previously created
+Download pulsar binaries to /opt/pulsar directory previously created and change ownership to folder and files recursively
+```
+$ /opt > sudo chown -R automaton:automaton pulsar
+```
+
 ```
 $ opt/pulsar > sudo wget https://archive.apache.org/dist/pulsar/pulsar-2.10.0/apache-pulsar-2.10.0-bin.tar.gz
 ```
@@ -13,7 +17,7 @@ HTTP request sent, awaiting response... 200 OK
 Length: 353637721 (337M) [application/x-gzip]
 Saving to: ‘apache-pulsar-2.10.0-bin.tar.gz’
 
-apache-pulsar-2.10.0-bin.tar.gz 100%[===========================================================================================>] 337.25M  5.68MB/s    in 44s
+apache-pulsar-2.10.0-bin.tar.gz 100%[==================================>] 337.25M  5.68MB/s    in 44s
 
 2022-11-22 18:42:19 (7.60 MB/s) - ‘apache-pulsar-2.10.0-bin.tar.gz’ saved [353637721/353637721]
 
@@ -44,11 +48,6 @@ apache-pulsar-2.10.0/lib/presto/lib/slf4j-jdk14-1.7.32.jar
 apache-pulsar-2.10.0/lib/presto/lib/slice-0.38.jar
 apache-pulsar-2.10.0/lib/presto/lib/snakeyaml-1.30.jar
 apache-pulsar-2.10.0/lib/presto/lib/stats-0.195.jar
-```
-
-back one level and change ownership to folder and files recursively
-```
-$ /opt > sudo chown -R automaton:automaton pulsar-2.10.0 
 ```
 
 go to untared folder and list content:
