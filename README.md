@@ -6,15 +6,16 @@ Download pulsar binaries to /opt/pulsar directory, previously created
 $ opt/pulsar > sudo wget https://archive.apache.org/dist/pulsar/pulsar-2.10.0/apache-pulsar-2.10.0-bin.tar.gz
 ```
 ```
---2022-08-14 10:03:15--  https://github.com/apache/pulsar/archive/refs/tags/v2.10.0.zip
-Resolving github.com (github.com)... 192.30.255.112
-Connecting to github.com (github.com)|192.30.255.112|:443... connected.
-...
-Saving to: ‘v2.10.0.zip’
+--2022-11-22 18:41:34--  https://archive.apache.org/dist/pulsar/pulsar-2.10.0/apache-pulsar-2.10.0-bin.tar.gz
+Resolving archive.apache.org (archive.apache.org)... 2a01:4f8:172:2ec5::2, 138.201.131.134
+Connecting to archive.apache.org (archive.apache.org)|2a01:4f8:172:2ec5::2|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 353637721 (337M) [application/x-gzip]
+Saving to: ‘apache-pulsar-2.10.0-bin.tar.gz’
 
-v2.10.0.zip             [        <=>         ]  58.73M  11.3MB/s    in 5.2s
+apache-pulsar-2.10.0-bin.tar.gz 100%[===========================================================================================>] 337.25M  5.68MB/s    in 44s
 
-2022-08-14 10:03:20 (11.3 MB/s) - ‘v2.10.0.zip’ saved [61587741]
+2022-11-22 18:42:19 (7.60 MB/s) - ‘apache-pulsar-2.10.0-bin.tar.gz’ saved [353637721/353637721]
 
 ```
 Verify file has been downloaded
@@ -50,7 +51,7 @@ back one level and change ownership to folder and files recursively
 $ /opt > sudo chown -R automaton:automaton pulsar-2.10.0 
 ```
 
-go to unzipped folder and list content:
+go to untared folder and list content:
 ```
 $ /opt/pulsar/apache-pulsar-2.10.0 > ls -la
 ```
