@@ -7,7 +7,7 @@ $ /opt > sudo chown -R automaton:automaton pulsar
 ```
 Download binaries:
 ```
-$ opt/pulsar > sudo wget https://archive.apache.org/dist/pulsar/pulsar-2.10.0/apache-pulsar-2.10.0-bin.tar.gz
+$ opt/pulsar > wget https://archive.apache.org/dist/pulsar/pulsar-2.10.0/apache-pulsar-2.10.0-bin.tar.gz
 ```
 ```
 --2022-11-22 18:41:34--  https://archive.apache.org/dist/pulsar/pulsar-2.10.0/apache-pulsar-2.10.0-bin.tar.gz
@@ -115,7 +115,7 @@ $ cd /opt/pulsar/apache-pulsar-2.10.0/conf
 
 Rename the client.conf file that comes with the binaries by default
 ```
-$ /opt/pulsar/apache-pulsar-2.10.0/conf > sudo mv client.conf client.conf.backuppulsar210
+$ /opt/pulsar/apache-pulsar-2.10.0/conf > cp client.conf client.conf.backuppulsar210
 ```
 Create a new client.conf file and paste the content of the downloaded conf.file obtained from the Astra Pulsar intance. It should finally look like this: 
 ```
