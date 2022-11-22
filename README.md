@@ -5,7 +5,7 @@ Download pulsar binaries to /opt/pulsar directory previously created and change 
 ```
 $ /opt > sudo chown -R automaton:automaton pulsar
 ```
-
+Download binaries:
 ```
 $ opt/pulsar > sudo wget https://archive.apache.org/dist/pulsar/pulsar-2.10.0/apache-pulsar-2.10.0-bin.tar.gz
 ```
