@@ -3,7 +3,7 @@
 
 Download pulsar binaries to /opt/pulsar directory, previously created
 ```
-$ opt/pulsar > sudo wget https://github.com/apache/pulsar/archive/refs/tags/v2.10.0.zip
+$ opt/pulsar > sudo wget https://archive.apache.org/dist/pulsar/pulsar-2.10.0/apache-pulsar-2.10.0-bin.tar.gz
 ```
 ```
 --2022-08-14 10:03:15--  https://github.com/apache/pulsar/archive/refs/tags/v2.10.0.zip
@@ -27,14 +27,22 @@ $ opt/pulsar > ls -la
 
 Unzip downloaded file
 ```
-$ opt/pulsar > sudo unzip v2.10.0.zip
+$ opt/pulsar > tar -xvf apache-pulsar-2.10.0-bin.tar.gz
 ```
 ```
-inflating: pulsar-2.10.0/tiered-storage/src/main/resources/findbugsExclude.xml
-   creating: pulsar-2.10.0/wireshark/
-inflating: pulsar-2.10.0/wireshark/README.md
-inflating: pulsar-2.10.0/wireshark/pulsar.lua
+apache-pulsar-2.10.0/README
+apache-pulsar-2.10.0/LICENSE
+apache-pulsar-2.10.0/NOTICE
+apache-pulsar-2.10.0/instances/java-instance.jar
+apache-pulsar-2.10.0/examples/api-examples.jar
+apache-pulsar-2.10.0/examples/example-function-config.yaml
+apache-pulsar-2.10.0/examples/example-window-function-config.yaml
+apache-pulsar-2.10.0/conf/
 ....
+apache-pulsar-2.10.0/lib/presto/lib/slf4j-jdk14-1.7.32.jar
+apache-pulsar-2.10.0/lib/presto/lib/slice-0.38.jar
+apache-pulsar-2.10.0/lib/presto/lib/snakeyaml-1.30.jar
+apache-pulsar-2.10.0/lib/presto/lib/stats-0.195.jar
 ```
 
 back one level and change ownership to folder and files recursively
