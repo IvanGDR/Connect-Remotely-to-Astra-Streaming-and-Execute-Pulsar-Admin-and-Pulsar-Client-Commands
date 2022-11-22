@@ -39,7 +39,7 @@ inflating: pulsar-2.10.0/wireshark/pulsar.lua
 
 back one level and change ownership to folder and files recursively
 ```
-$ /opt > sudo chown -R automaton:automaton pulsar 
+$ /opt > sudo chown -R automaton:automaton pulsar-2.10.0 
 ```
 
 go to unzipped folder and list content:
