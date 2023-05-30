@@ -178,3 +178,4 @@ $ /opt/pulsar/apache-pulsar-2.10.0 > ./bin/pulsar-admin clusters list
 HTTP 401 Unauthorized
 Reason: HTTP 401 Unauthorized
 ```
+Note:
